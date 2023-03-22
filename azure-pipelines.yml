@@ -1,8 +1,14 @@
 trigger: none
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: 'DevOpscsproj'
+    arguments: 'DevOpscsproj'
+
 
 pool:
-  vmImage: scott agent
+  vmImage: windows- leates 
 
 steps:
 - script: echo we did it
