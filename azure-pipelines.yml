@@ -1,0 +1,10 @@
+trigger: none
+
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- script: echo we did it
+
+
